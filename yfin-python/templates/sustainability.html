@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sustainability Data for {{ symbol }}</title>
+</head>
+<body>
+    <h1>Sustainability Data for {{ symbol }}</h1>
+    {% if sustainability %}
+        <table border="1">
+            <tr>
+                <th>Metric</th>
+                <th>Value</th>
+            </tr>
+            {% for metric, value in sustainability.items() %}
+                <tr>
+                    <td>{{ metric }}</td>
+                    <td>{{ value }}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    {% else %}
+        <p>No sustainability data available for this company.</p>
+    {% endif %}
+    <a href="/">Back</a>
+</body>
+</html>

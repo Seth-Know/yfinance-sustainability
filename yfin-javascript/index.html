@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESG Scores Viewer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ESG Scores Viewer</h1>
+        <div class="search-container">
+            <input type="text" id="companySearch" list="companyList" placeholder="Search for a company...">
+            <datalist id="companyList"></datalist>
+        </div>
+        <div id="esgScores">
+            <p>Total ESG Score: <span id="totalEsg"></span></p>
+            <p>Environment Score: <span id="environmentScore"></span></p>
+            <p>Social Score: <span id="socialScore"></span></p>
+            <p>Governance Score: <span id="governanceScore"></span></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Dropdown</title>
+</head>
+<body>
+    <h1>Select a Company</h1>
+    <form action="/sustainability" method="post">
+        <select name="symbol" id="company-dropdown">
+            {% for symbol, name in options %}
+                <option value="{{ symbol }}">{{ name }} ({{ symbol }})</option>
+            {% endfor %}
+        </select>
+        <button type="submit">Get Sustainability Data</button>
+    </form>
+</body>
+</html>
