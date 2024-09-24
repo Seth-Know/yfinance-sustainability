@@ -2,7 +2,7 @@ import pandas as pd
 import yfinance as yf
 
 # Read the CSV file with company symbols
-df = pd.read_csv('C:\Repo\yfin\constituents.csv')
+df = pd.read_csv('C:\Repo\yfinance-sustainability\yfin-python\constituents.csv')
 
 # List to store the sustainability data
 results = []

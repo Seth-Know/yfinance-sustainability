@@ -7,7 +7,7 @@ app = Flask(__name__)
 @app.route('/')
 def index():
     # Load the CSV file
-    df = pd.read_csv('C:\Repo\yfin\constituents.csv')
+    df = pd.read_csv('C:\Repo\yfinance-sustainability\yfin-python\constituents.csv')
     
     # Create a list of tuples (symbol, company name)
     dropdown_options = list(zip(df['Symbol'], df['Security']))
